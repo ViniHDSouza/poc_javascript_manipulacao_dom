@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05 — Eventos | DOM Manipulation Playground</title>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<div class="wrapper">
+  <a href="index.html" class="btn-voltar">← Voltar ao Índice</a>
+  <h1>05 — Eventos</h1>
+  <p>Entenda como adicionar e remover ouvintes de eventos para criar interatividade.</p>
+  
+  <div class="demo-container">
+    
+    <div class="demo-section">
+      <h3>Área de Demonstração</h3>
+      <div class="output-area">
+        <button id="btn-evento-click">Clique em Mim</button>
+        <p id="log-eventos">Log de Eventos:</p>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h3>Controles e Métodos</h3>
+      
+      <h4>Manipulação de Eventos</h4>
+      <div class="controls">
+        <button id="btn-add-event">addEventListener('click')</button>
+        <button id="btn-remove-event">removeEventListener('click')</button>
+        <button id="btn-limpar-log">Limpar Log</button>
+      </div>
+      
+      <div class="code-snippet">
+        <p>Código JavaScript Executado:</p>
+        <pre id="codigo-executado">Clique em um botão para ver o código...</pre>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="05-eventos.js"></script>
+</body>
+</html>

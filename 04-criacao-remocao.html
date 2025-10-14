@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04 — Criação e Remoção | DOM Manipulation Playground</title>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<div class="wrapper">
+  <a href="index.html" class="btn-voltar">← Voltar ao Índice</a>
+  <h1>04 — Criação e Remoção</h1>
+  <p>Veja como criar novos elementos e inseri-los/removê-los da árvore DOM.</p>
+  
+  <div class="demo-container">
+    
+    <div class="demo-section">
+      <h3>Área de Demonstração</h3>
+      <div class="output-area" id="lista-elementos">
+        <p id="elemento-pai">Este é o elemento PAI (ID: #elemento-pai). Novos elementos serão adicionados aqui.</p>
+        <div class="demo-element" id="elemento-filho-1">Elemento Filho 1</div>
+        <div class="demo-element" id="elemento-filho-2">Elemento Filho 2</div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h3>Controles e Métodos</h3>
+      
+      <h4>Criação e Inserção</h4>
+      <div class="controls">
+        <button id="btn-create-element">createElement('div')</button>
+        <button id="btn-append-child">appendChild(novoElemento)</button>
+        <button id="btn-clone-node">cloneNode(true)</button>
+      </div>
+      
+      <h4>Remoção</h4>
+      <div class="controls">
+        <button id="btn-remove-child">removeChild(Elemento Filho 1)</button>
+        <button id="btn-remove-self">Elemento Filho 2.remove()</button>
+        <button id="btn-reset-dom">Resetar DOM</button>
+      </div>
+      
+      <div class="code-snippet">
+        <p>Código JavaScript Executado:</p>
+        <pre id="codigo-executado">Clique em um botão para ver o código...</pre>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="04-criacao-remocao.js"></script>
+</body>
+</html>

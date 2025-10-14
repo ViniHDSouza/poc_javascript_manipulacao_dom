@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>03 — Estilo e Classes | DOM Manipulation Playground</title>
+<link rel="stylesheet" href="common.css">
+<style>
+  .estilo-customizado {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <a href="index.html" class="btn-voltar">← Voltar ao Índice</a>
+  <h1>03 — Estilo e Classes</h1>
+  <p>Domine a alteração de estilos inline e a manipulação de classes CSS.</p>
+  
+  <div class="demo-container">
+    
+    <div class="demo-section">
+      <h3>Área de Demonstração</h3>
+      <div class="output-area">
+        <div id="elemento-estilo" class="demo-element">Elemento para manipulação de Estilo e Classes</div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h3>Controles e Métodos</h3>
+      
+      <h4>Manipulação de Estilo Inline (<code>.style</code>)</h4>
+      <div class="controls">
+        <label for="cor-fundo">Cor de Fundo:</label>
+        <input type="color" id="cor-fundo" value="#f0f0f0">
+        <button id="btn-style-background">Aplicar Cor de Fundo</button>
+        <button id="btn-style-reset">Resetar Estilo Inline</button>
+      </div>
+      
+      <h4>Manipulação de Classes (<code>.classList</code>)</h4>
+      <div class="controls">
+        <button id="btn-class-add">classList.add('estilo-customizado')</button>
+        <button id="btn-class-remove">classList.remove('estilo-customizado')</button>
+        <button id="btn-class-toggle">classList.toggle('highlight')</button>
+        <button id="btn-class-reset">Resetar Classes</button>
+      </div>
+      
+      <div class="code-snippet">
+        <p>Código JavaScript Executado:</p>
+        <pre id="codigo-executado">Clique em um botão para ver o código...</pre>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="03-estilo-classes.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Manipulation Playground — Por Vinícius Souza</title>
+<link rel="stylesheet" href="common.css">
+<style>
+  /* Estilos específicos para a página inicial */
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  .hero h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    color: #666;
+    font-size: 1.1em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  .card h3 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .card p {
+    color: #555;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <header class="hero">
+    <h1>🕹️ DOM Manipulation Playground</h1>
+    <p>Um ambiente interativo para aprender e dominar as principais funções de manipulação do DOM com JavaScript puro.</p>
+    <p><strong>Autor: Vinícius Souza</strong></p>
+  </header>
+
+  <div class="note">
+    <strong>💡 Como usar:</strong> Navegue pelas demos abaixo. Cada uma foca em um conjunto de funções do DOM, permitindo que você interaja e veja o código JavaScript correspondente em ação.
+  </div>
+
+  <h2>📚 Demos Interativas</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="01-selecao-elementos.html">01 — Seleção de Elementos</a></h3>
+      <p>Aprenda a encontrar elementos na página usando <code>getElementById</code>, <code>querySelector</code>, <code>querySelectorAll</code> e outros métodos de seleção.</p>
+    </div>
+    <div class="card">
+      <h3><a href="02-conteudo-atributos.html">02 — Conteúdo e Atributos</a></h3>
+      <p>Explore como modificar o texto (<code>textContent</code>, <code>innerHTML</code>) e gerenciar atributos (<code>setAttribute</code>, <code>removeAttribute</code>) dos elementos.</p>
+    </div>
+    <div class="card">
+      <h3><a href="03-estilo-classes.html">03 — Estilo e Classes</a></h3>
+      <p>Domine a alteração de estilos inline (<code>style</code>) e a manipulação de classes CSS (<code>classList.add/remove/toggle</code>).</p>
+    </div>
+    <div class="card">
+      <h3><a href="04-criacao-remocao.html">04 — Criação e Remoção</a></h3>
+      <p>Veja como criar novos elementos (<code>createElement</code>) e inseri-los/removê-los da árvore DOM (<code>appendChild</code>, <code>removeChild</code>).</p>
+    </div>
+    <div class="card">
+      <h3><a href="05-eventos.html">05 — Eventos</a></h3>
+      <p>Entenda como adicionar e remover ouvintes de eventos (<code>addEventListener</code>, <code>removeEventListener</code>) para criar interatividade.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

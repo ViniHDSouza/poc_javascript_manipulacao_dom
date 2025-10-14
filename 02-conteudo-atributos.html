@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02 — Conteúdo e Atributos | DOM Manipulation Playground</title>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<div class="wrapper">
+  <a href="index.html" class="btn-voltar">← Voltar ao Índice</a>
+  <h1>02 — Conteúdo e Atributos</h1>
+  <p>Aprenda a modificar o conteúdo e os atributos dos elementos do DOM.</p>
+  
+  <div class="demo-container">
+    
+    <div class="demo-section">
+      <h3>Área de Demonstração</h3>
+      <div class="output-area">
+        <p id="paragrafo-conteudo" data-original-text="Este é o texto original do parágrafo.">Este é o texto original do parágrafo.</p>
+        <div id="div-html" data-link-attr="https://www.google.com">Esta div contém um link: <a href="#" id="link-atributo">Clique aqui</a></div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h3>Controles e Métodos</h3>
+      
+      <h4>Modificação de Conteúdo</h4>
+      <div class="controls">
+        <label for="novo-texto">Novo Texto:</label>
+        <input type="text" id="novo-texto" value="Novo Conteúdo" style="flex-grow: 1;">
+        <button id="btn-text-content">textContent</button>
+        <button id="btn-inner-html">innerHTML</button>
+        <button id="btn-reset-conteudo">Resetar Conteúdo</button>
+      </div>
+      
+      <h4>Modificação de Atributos</h4>
+      <div class="controls">
+        <label for="novo-atributo">Novo Atributo (href):</label>
+        <input type="text" id="novo-atributo" value="https://www.manus.im" style="flex-grow: 1;">
+        <button id="btn-set-attribute">setAttribute('href')</button>
+        <button id="btn-remove-attribute">removeAttribute('data-link-attr')</button>
+        <button id="btn-reset-atributos">Resetar Atributos</button>
+      </div>
+      
+      <div class="code-snippet">
+        <p>Código JavaScript Executado:</p>
+        <pre id="codigo-executado">Clique em um botão para ver o código...</pre>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="02-conteudo-atributos.js"></script>
+</body>
+</html>
