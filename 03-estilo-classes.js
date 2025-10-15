@@ -1,6 +1,27 @@
 // 03-estilo-classes.js
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Exibir o HTML da área de demonstração
+    const demoAreaHTML = document.getElementById('demo-area');
+    const htmlSourceCode = document.getElementById('html-source-code');
+    
+    function atualizarHTMLSource() {
+        htmlSourceCode.textContent = demoAreaHTML.innerHTML;
+    }
+    
+    // Exibir o HTML inicial
+    atualizarHTMLSource();
+    
+    // Criar um observer para atualizar o HTML quando a área de demonstração mudar
+    const observer = new MutationObserver(atualizarHTMLSource);
+    observer.observe(demoAreaHTML, { 
+        attributes: true, 
+        childList: true, 
+        subtree: true,
+        characterData: true,
+        attributeOldValue: true
+    });
+
     const elementoEstilo = document.getElementById('elemento-estilo');
     const corFundoInput = document.getElementById('cor-fundo');
     const codigoExecutado = document.getElementById('codigo-executado');

@@ -14,11 +14,23 @@
   
   <div class="demo-container">
     
-    <div class="demo-section">
-      <h3>Área de Demonstração</h3>
-      <div class="output-area">
-        <p id="paragrafo-conteudo" data-original-text="Este é o texto original do parágrafo.">Este é o texto original do parágrafo.</p>
-        <div id="div-html" data-link-attr="https://www.google.com">Esta div contém um link: <a href="#" id="link-atributo">Clique aqui</a></div>
+    <!-- Layout de duas colunas: Área de Demonstração + HTML Source -->
+    <div class="demo-layout">
+      <!-- Coluna 1: Área de Demonstração -->
+      <div class="demo-column">
+        <h3>Área de Demonstração</h3>
+        <div class="output-area" id="demo-area">
+          <p id="paragrafo-conteudo" data-original-text="Este é o texto original do parágrafo.">Este é o texto original do parágrafo.</p>
+          <div id="div-html" data-link-attr="https://www.google.com">Esta div contém um link: <a href="#" id="link-atributo">Clique aqui</a></div>
+        </div>
+      </div>
+
+      <!-- Coluna 2: HTML Source -->
+      <div class="demo-column">
+        <h3>HTML da Área de Demonstração</h3>
+        <div class="html-source">
+          <pre id="html-source-code"><!-- O código HTML será inserido aqui via JavaScript --></pre>
+        </div>
       </div>
     </div>
 
@@ -54,3 +66,4 @@
 <script src="02-conteudo-atributos.js"></script>
 </body>
 </html>
+

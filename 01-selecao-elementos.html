@@ -14,17 +14,29 @@
   
   <div class="demo-container">
     
-    <div class="demo-section">
-      <h3>Área de Demonstração</h3>
-      <p>Abaixo estão os elementos que serão selecionados. Observe seus IDs, classes e tags.</p>
-      
-      <div class="output-area" id="demo-area">
-        <div class="demo-element" id="elemento-unico">Elemento com ID: #elemento-unico</div>
-        <p class="demo-element item-lista">Item de Lista 1 (Classe: .item-lista)</p>
-        <p class="demo-element item-lista">Item de Lista 2 (Classe: .item-lista)</p>
-        <span class="demo-element item-lista">Span de Lista 3 (Classe: .item-lista)</span>
-        <div class="demo-element outro-elemento">Outro Elemento (Classe: .outro-elemento)</div>
-        <p class="demo-element">Parágrafo Simples</p>
+    <!-- Layout de duas colunas: Área de Demonstração + HTML Source -->
+    <div class="demo-layout">
+      <!-- Coluna 1: Área de Demonstração -->
+      <div class="demo-column">
+        <h3>Área de Demonstração</h3>
+        <p>Abaixo estão os elementos que serão selecionados. Observe seus IDs, classes e tags.</p>
+        
+        <div class="output-area" id="demo-area">
+          <div class="demo-element" id="elemento-unico">Elemento com ID: #elemento-unico</div>
+          <p class="demo-element item-lista">Item de Lista 1 (Classe: .item-lista)</p>
+          <p class="demo-element item-lista">Item de Lista 2 (Classe: .item-lista)</p>
+          <span class="demo-element item-lista">Span de Lista 3 (Classe: .item-lista)</span>
+          <div class="demo-element outro-elemento">Outro Elemento (Classe: .outro-elemento)</div>
+          <p class="demo-element">Parágrafo Simples</p>
+        </div>
+      </div>
+
+      <!-- Coluna 2: HTML Source -->
+      <div class="demo-column">
+        <h3>HTML da Área de Demonstração</h3>
+        <div class="html-source">
+          <pre id="html-source-code"><!-- O código HTML será inserido aqui via JavaScript --></pre>
+        </div>
       </div>
     </div>
 
@@ -54,3 +66,4 @@
 <script src="01-selecao-elementos.js"></script>
 </body>
 </html>
+
