@@ -86,6 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
         atualizarCodigo(codigo);
     });
 
+    // insertAdjacentHTML
+    document.getElementById('btn-insert-adjacent').addEventListener('click', () => {
+        const novoHTML = `<p class="demo-element new-element">Elemento ${contador} (insertAdjacentHTML)</p>`;
+        const codigo = `const pai = document.getElementById('lista-elementos');\npai.insertAdjacentHTML('beforeend', '${novoHTML}');\n// Insere uma string de texto como HTML em uma posição específica ('beforebegin', 'afterbegin', 'beforeend', 'afterend').`;
+        
+        listaElementos.insertAdjacentHTML('beforeend', novoHTML);
+        contador++;
+        atualizarCodigo(codigo);
+    });
+
     // cloneNode
     document.getElementById('btn-clone-node').addEventListener('click', () => {
         const elementoParaClonar = document.getElementById('elemento-filho-2');

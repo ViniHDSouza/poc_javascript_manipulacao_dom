@@ -82,4 +82,24 @@ document.addEventListener('DOMContentLoaded', () => {
         divHtml.innerHTML = 'Esta div contém um link: <a href="#" id="link-atributo">Clique aqui</a>';
         atualizarCodigo("// Atributos resetados para os valores iniciais.");
     });
+
+    // dataset - Definir
+    document.getElementById('btn-set-dataset').addEventListener('click', () => {
+        const key = document.getElementById('dataset-key').value;
+        const value = document.getElementById('dataset-value').value;
+        const codigo = `const elemento = document.getElementById('paragrafo-conteudo');\nelemento.dataset.${key} = '${value}';\n// Define um atributo data-* usando a propriedade dataset. Equivale a setAttribute('data-${key}', '${value}').`;
+        
+        paragrafoConteudo.dataset[key] = value;
+        atualizarCodigo(codigo);
+    });
+
+    // dataset - Ler
+    document.getElementById('btn-get-dataset').addEventListener('click', () => {
+        const key = document.getElementById('dataset-key').value;
+        const value = paragrafoConteudo.dataset[key];
+        const codigo = `const elemento = document.getElementById('paragrafo-conteudo');\nconst valor = elemento.dataset.${key};\nconsole.log(valor); // '${value || 'undefined'}'\n// Lê o valor de um atributo data-* usando a propriedade dataset.`;
+        
+        atualizarCodigo(codigo);
+        alert(`dataset.${key} = "${value || 'undefined'}"`);
+    });
 });

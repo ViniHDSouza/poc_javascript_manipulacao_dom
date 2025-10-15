@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>06 — Navegação no DOM | DOM Manipulation Playground</title>
+<link rel="stylesheet" href="common.css">
+<style>
+  .arvore-dom {
+    border: 2px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+  }
+  .nivel-1 {
+    margin-left: 0;
+  }
+  .nivel-2 {
+    margin-left: 20px;
+  }
+  .nivel-3 {
+    margin-left: 40px;
+  }
+  .elemento-destaque {
+    background-color: #ffc107;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <a href="index.html" class="btn-voltar">← Voltar ao Índice</a>
+  <h1>06 — Navegação no DOM</h1>
+  <p>Aprenda a navegar pela árvore do DOM usando propriedades de relacionamento entre elementos.</p>
+  
+  <div class="demo-container">
+    
+    <!-- Layout de duas colunas: Área de Demonstração + HTML Source -->
+    <div class="demo-layout">
+      <!-- Coluna 1: Área de Demonstração -->
+      <div class="demo-column">
+        <h3>Área de Demonstração</h3>
+        <div class="output-area arvore-dom" id="demo-area">
+          <div class="nivel-1" id="container-pai">
+            <strong>Container Pai (ID: #container-pai)</strong>
+            <div class="nivel-2" id="filho-1">
+              Filho 1 (ID: #filho-1)
+              <div class="nivel-3" id="neto-1">Neto 1 (ID: #neto-1)</div>
+              <div class="nivel-3" id="neto-2">Neto 2 (ID: #neto-2)</div>
+            </div>
+            <div class="nivel-2" id="filho-2">Filho 2 (ID: #filho-2)</div>
+            <div class="nivel-2" id="filho-3">Filho 3 (ID: #filho-3)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna 2: HTML Source -->
+      <div class="demo-column">
+        <h3>HTML da Área de Demonstração</h3>
+        <div class="html-source">
+          <pre id="html-source-code"><!-- O código HTML será inserido aqui via JavaScript --></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h3>Controles e Métodos</h3>
+      
+      <h4>Navegação a partir de #filho-1</h4>
+      <div class="controls">
+        <button id="btn-parent">parentElement</button>
+        <button id="btn-children">children</button>
+        <button id="btn-first-child">firstElementChild</button>
+        <button id="btn-last-child">lastElementChild</button>
+        <button id="btn-next-sibling">nextElementSibling</button>
+        <button id="btn-previous-sibling">previousElementSibling</button>
+        <button id="btn-limpar">Limpar Destaque</button>
+      </div>
+      
+      <div class="code-snippet">
+        <p>Código JavaScript Executado:</p>
+        <pre id="codigo-executado">Clique em um botão para ver o código...</pre>
+      </div>
+      
+      <div class="note">
+        <strong>Resultado:</strong> O(s) elemento(s) navegado(s) será(ão) destacado(s) em amarelo.
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="06-navegacao-dom.js"></script>
+</body>
+</html>
+

@@ -11,10 +11,11 @@ O objetivo principal é fornecer um ambiente prático e autoexplicativo onde é 
 O projeto é dividido em seções interativas, cada uma focada em um conjunto específico de métodos do DOM:
 
 1.  **Seleção de Elementos:** `getElementById`, `querySelector`, `querySelectorAll`, `getElementsByClassName`, `getElementsByTagName`.
-2.  **Modificação de Conteúdo:** `textContent`, `innerHTML`, `setAttribute`, `removeAttribute`.
+2.  **Modificação de Conteúdo:** `textContent`, `innerHTML`, `setAttribute`, `removeAttribute`, `dataset`.
 3.  **Modificação de Estilo e Classes:** `style`, `classList.add`, `classList.remove`, `classList.toggle`.
-4.  **Criação e Remoção de Elementos:** `createElement`, `appendChild`, `removeChild`, `cloneNode`.
+4.  **Criação e Remoção de Elementos:** `createElement`, `appendChild`, `insertAdjacentHTML`, `removeChild`, `cloneNode`.
 5.  **Eventos:** `addEventListener`, `removeEventListener`.
+6.  **Navegação no DOM:** `parentElement`, `children`, `firstElementChild`, `lastElementChild`, `nextElementSibling`, `previousElementSibling`.
 
 ## 👨‍💻 Autor
 
